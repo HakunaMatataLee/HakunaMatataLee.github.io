@@ -1,0 +1,150 @@
+/* 基本样式 */
+body {
+    font-family: '微软雅黑', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* 导航栏样式 */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(162, 56, 56);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-family: '楷体', serif;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.navbar .nav-links li {
+    margin: 0 15px;
+}
+
+.navbar .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navbar .nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* 首屏展示样式 */
+.hero {
+    background-color: rgb(202, 125, 102);
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+    margin-bottom: 50px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-family: '楷体', serif;
+}
+
+.hero h2 {
+    font-size: 36px;
+    font-family: '楷体', serif;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+/* 关于我、专业经历、技能、项目展示、教育背景、联系方式样式 */
+.section {
+    padding: 50px 0;
+    margin-bottom: 50px;
+}
+
+.section h2 {
+    font-size: 32px;
+    font-family: '楷体', serif;
+    margin-bottom: 20px;
+}
+
+.experience-item, .education-item {
+    margin-bottom: 20px;
+}
+
+.experience-item h3, .education-item h3 {
+    font-size: 24px;
+    font-family: '楷体', serif;
+    margin-bottom: 10px;
+}
+
+.experience-item ul, .education-item p {
+    font-size: 18px;
+}
+
+/* 页脚样式 */
+.footer {
+    background-color: rgb(162, 56, 56);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .navbar .nav-links {
+        flex-direction: column;
+    }
+
+    .navbar .nav-links li {
+        margin: 10px 0;
+    }
+
+    .hero {
+        padding: 50px 0;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .section h2 {
+        font-size: 28px;
+    }
+
+    .experience-item h3, .education-item h3 {
+        font-size: 22px;
+    }
+
+    .experience-item ul, .education-item p {
+        font-size: 16px;
+    }
+}
